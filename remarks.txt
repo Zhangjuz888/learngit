@@ -1,9 +1,15 @@
 title: 创建本地git仓库
 author: zhangjuz
 time: 2019-01-10
-
+步骤:
 1、cd  // 切换更目录
 2、创建文件目录mkdir "目录名"
 3、vi "文件名" 并打开该创建的文件
 4、pwd 查看当前文件路径
 5、git init 把在本地新创建的目录改为可管理的git仓库
+
+title: 回退指定版本
+author: zhangjuz
+time: 2019-01-10
+步骤:
+1、查看版本号 git log
