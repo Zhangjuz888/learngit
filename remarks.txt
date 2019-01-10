@@ -1,3 +1,7 @@
+title: 创建本地git仓库
+author: zhangjuz
+time: 2019-01-10
+
 1、cd  // 切换更目录
 2、创建文件目录mkdir "目录名"
 3、vi "文件名" 并打开该创建的文件
