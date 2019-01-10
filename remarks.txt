@@ -13,3 +13,5 @@ author: zhangjuz
 time: 2019-01-10
 步骤:
 1、查看版本号 git log
+2、git reflog 查看Git记录的指令记录
+3、git reset --hard "版本号"
