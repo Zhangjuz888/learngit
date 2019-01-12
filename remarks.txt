@@ -48,4 +48,7 @@ ls(列出.ssh目录的文件)
 cat id_rsa.pub (查看该文件内容，然后直接复制)
 最后登录 GitHub 网站 在Personal settings 一栏上将公钥复制上去点击保存
 
-
+title: 从远程库克隆
+author: zhangjuz
+time: 2019-01-12
+    在终端执行直接执行 git clone <git远程库的地址>
