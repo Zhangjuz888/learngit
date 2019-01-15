@@ -57,4 +57,5 @@ title: 创建and切换dev分支，然后合并master
 author: zhangjuz
 time: 2019-01-15
 首先我们先创建并切换一个dev分支，git checkout -b dev（相当于执行了两行命令：git branch dev  git checkout dev）
-
+然后再切换回主分支，git checkout <主分支> 执行 git merge <dev> (要合并的分支) 然后删除已创建的分支，执行git branch -d <分支名>
+最后决定要合并分支前，必须要在创建的分支上把修改的内容提交再切换回主分支进行合并
