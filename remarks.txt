@@ -59,3 +59,8 @@ time: 2019-01-15
 首先我们先创建并切换一个dev分支，git checkout -b dev（相当于执行了两行命令：git branch dev  git checkout dev）
 然后再切换回主分支，git checkout <主分支> 执行 git merge <dev> (要合并的分支) 然后删除已创建的分支，执行git branch -d <分支名>
 最后决定要合并分支前，必须要在创建的分支上把修改的内容提交再切换回主分支进行合并
+
+title：BUG分支
+author: zhangjuz
+Time: 2019-01-15
+    工作区编写代码尚未写好时，首先执行git stash 暂时隐藏 工作区目前的状态，这时再次执行git status 就看不到工作区未提交文件的状态了，这是我们先要切换到要修改分支的上面去，举个栗子，我们需要再master分支上修改，我们首先在上面临时建立一个bug分支，git checkout -b <临时分支名> （注意：最好不要使用中文名来命名），修复好相关bug后，再切换回master分支上完成合并然后删除，这里我们在合并的时候可以用 git merge --no-ff -m 'fix: #BUG编码 修复的内容等····' 使用 --no-ff 目的是为了保留分支的信息，修复完BUG后我们继续完成工作区未完成的事情，我们可以执行git stash apply来恢复工作区的文件状态
