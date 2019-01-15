@@ -51,4 +51,10 @@ cat id_rsa.pub (查看该文件内容，然后直接复制)
 title: 从远程库克隆
 author: zhangjuz
 time: 2019-01-12
-    在终端执行直接执行 git clone <git远程库的地址>
+在终端执行直接执行 git clone <git远程库的地址>
+
+title: 创建and切换dev分支，然后合并master
+author: zhangjuz
+time: 2019-01-15
+首先我们先创建并切换一个dev分支，git checkout -b dev（相当于执行了两行命令：git branch dev  git checkout dev）
+
